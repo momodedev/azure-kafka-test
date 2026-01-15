@@ -1,0 +1,18 @@
+kafka_home: /opt
+kafka_workspace: "{{ kafka_home }}/kafka"
+kafka_data_dir: "{{ kafka_workspace }}/data"
+kafka_log_dir: "{{ kafka_data_dir }}"
+kafka_log_dirs: "{{ kafka_data_dir }}"
+services_logs_dir: "{{ kafka_workspace }}/services-logs"
+kafka_heap_size: -Xmx2G -Xms2G
+kafka_client_port: 9092
+kafka_controller_port: 9093
+kafka_external_port: 9094
+kafka_exporter_port: 9308
+kafka_exporter_version: "1.7.0"
+kafka_exporter_download_url: "https://github.com/danielqsj/kafka_exporter/releases/download/v{{ kafka_exporter_version }}/kafka_exporter-{{ kafka_exporter_version }}.linux-amd64.tar.gz"
+prometheus_sd_output_path: "generated/prometheus/kafka_targets.json"
+kafka_version: "3.9.1"
+node_exporter_version: "1.8.1"
+node_exporter_port: 9100
+node_exporter_download_url: "https://github.com/prometheus/node_exporter/releases/download/v{{ node_exporter_version }}/node_exporter-{{ node_exporter_version }}.linux-amd64.tar.gz"

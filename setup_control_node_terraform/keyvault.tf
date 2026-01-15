@@ -4,7 +4,7 @@ data "http" "myip" {
 
 
 resource "azurerm_key_vault" "example" {
-  name                       = "control-keyvault"
+  name                       = "control-keyvault-00-00"
   location                   = azurerm_resource_group.example.location
   resource_group_name        = azurerm_resource_group.example.name
   tenant_id                  = data.azurerm_client_config.current.tenant_id

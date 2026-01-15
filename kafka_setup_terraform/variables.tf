@@ -13,7 +13,7 @@ variable "resource_group_name" {
 variable "ARM_SUBSCRIPTION_ID" {
   description = "Azure subscription identifier."
   type        = string
-  default = "8d6bd1eb-ae31-4f2c-856a-0f8e47115c4b"
+  default = "ffe7c7cd-f495-444a-9df7-9bcb39da2d66"
 }
 
 variable "ARM_TENANT_ID" {

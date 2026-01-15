@@ -20,8 +20,8 @@ pip3 install ansible
 # Clone the repository
 mkdir -p /opt
 cd /opt
-git clone https://github.com/momodedev/azure-kafka.git || true
-cd azure-kafka
+git clone https://github.com/momodedev/azure-kafka-test.git || true
+cd azure-kafka-test
 
 # Set Kafka broker ID based on VM hostname
 KAFKA_BROKER_ID=$(hostname | grep -oP '(?<=-)\d+$')
